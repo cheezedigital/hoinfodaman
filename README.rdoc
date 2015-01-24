@@ -1,2 +1,2 @@
 == Stripe
-    intergrating stripe - 
+    integrating stripe - 
