@@ -1,9 +1,12 @@
+source 'https://code.stripe.com'
 source 'https://rubygems.org'
 
 ruby '2.2.0'
 
-gem 'aws-sdk' #to save uploaded files to s3 instead of using the application, which would take it longer to load 
-
+gem 'aws-sdk' #to save uploaded files to s3 instead of using the application, which would take it longer to load
+gem 'rest-client', :source => 'https://rubygems.org/'
+# gem 'stripe', :source => 'https://code.stripe.com/'
+gem 'stripe' #, :git => 'https://github.com/stripe/stripe-ruby'
 gem 'thin'
 gem 'paperclip', '~> 4.2.1' #to attach downloadabe files
 gem 'devise', '~> 3.4.1'
