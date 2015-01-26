@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 ruby '2.2.0'
 
+gem 'httparty' # When you HTTP party, you must party hard!
 gem 'aws-sdk' #to save uploaded files to s3 instead of using the application, which would take it longer to load
 gem 'rest-client', :source => 'https://rubygems.org/'
 # gem 'stripe', :source => 'https://code.stripe.com/'
@@ -29,3 +30,8 @@ group :development, :test do
 end
 
 gem 'rails_12factor', group: :production
+
+group :development do
+  gem 'stripe-ruby-mock'
+  gem 'database_cleaner'
+end
